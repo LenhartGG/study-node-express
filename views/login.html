@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>login</title>
+    <style>
+        .section_login{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .containerbox{
+            width: 300px;
+            margin: 200px auto;
+            background: skyblue;
+            padding: 20px 40px;
+            border-radius: 5px;
+        }
+        .form-group{
+            padding: 10px 0;
+        }
+        input, button{
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        input{
+            text-indent: 2em;
+        }
+        button{
+            background: rgba(0, 0, 255, 0.7);
+            margin-top: 30px;
+            opacity: .6;
+            color: blanchedalmond;
+        }
+        button:hover{
+            background: rgba(0, 0, 255, 1);
+        }
+        .switch-info{
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- login start -->
+    <section class="section_login module_login" style="display:none;">
+        <div class="containerbox">
+            <!-- <div class="header">iPluggable</div> -->
+            <div class="content">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1">Email address</label> -->
+                            <input id="username"type="text" focus class="form-control" placeholder="UserName">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                            <input id="password" type="password" class="form-control" placeholder="PassWord">
+                        </div>
+                        <button id="login" type="button">LOGIN</button>
+                    </form>
+                    <div class="switch-info">
+                        New to site?  <a class="switch-register" href="javascript:void(0);">Create Account</a> 
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- login end -->
+    <!-- register start -->
+    <section class="section_login module_register">
+        <div class="containerbox">
+            <!-- <div class="header">iPluggable</div> -->
+            <div class="content">
+                    <form>
+                        <div class="form-group">
+                            <input id="username2"type="text" focus class="form-control"  placeholder="UserName">
+                        </div>
+                        <div class="form-group">
+                            <input id="password2" type="password" class="form-control" placeholder="PassWord">
+                        </div>
+                        <button id="register" type="button">REGISTER</button>
+                    </form>
+                    <div class="switch-info">
+                        Already a member ? <a class="switch-login" href="javascript:void(0);">Log in</a> 
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- register end -->
+
+</body>
+	<!-- JavaScript -->
+    <script src="lib/jquery-2.2.3.min.js"></script>
+    <!-- login_controller -->
+	<script src="javascripts/login.js"></script>
+</html>
